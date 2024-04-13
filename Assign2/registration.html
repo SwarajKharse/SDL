@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" class="registration-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required minlength="6" maxlength="10" placeholder="6-10 letters">
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Prefer not to say</label>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="USA">USA</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="profilePic">Profile Picture</label>
+                    <input type="file" id="profilePic" name="profilePic" required>
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" placeholder="Enter your bio" required></textarea>
+                <span class="error-message"></span>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="register-btn">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>

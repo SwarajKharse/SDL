@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: aliceblue;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f2f2f2;
+}
+
+h1{
+    text-align: center;
+}
+
+.seating-chart {
+    border: 2px solid black;
+    padding: 25px;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 354px;
+}
+
+input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+input[type="submit"] {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    margin: 10px 130px;
+}
+
+button{
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    margin: 10px 130px;
+}
+
+input[type="submit"]:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+input[type="submit"]:active {
+    transform: translate(0em, 0.2em);
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 30px;
+    background-color: #4CAF50; /* Green background for available seats */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #f44336; /* Red background for selected seats */
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+#seat-details {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 15px;
+    padding-left: 30px;
+}
+
+#seat-details h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+

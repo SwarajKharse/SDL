@@ -1,0 +1,80 @@
+.shape-form{
+    width: 500px;
+    padding: 20px;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 100;
+}
+
+.shape__{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .shape{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.input-form{
+    width: 400px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+form.dimensions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="number"]{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    margin: 30px 50px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.output-section{
+    width: 500px;
+    border: 1px solid #201b1b;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 10px;
+    padding-left: 20px;
+    margin-left: 20px;
+}

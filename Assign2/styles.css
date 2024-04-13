@@ -1,0 +1,98 @@
+/* Main container styles */
+body{
+    background-color: rgb(173, 209, 209);
+}
+
+.registration-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form layout */
+  .registration-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 100px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Input field styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="date"],
+  input[type="file"],
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+  }
+  
+  /* Gender options layout */
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+}
+  
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    height: 1rem; /* Ensure consistent spacing */
+}
+  
+/* Button styles */
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5a67d8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.register-btn:hover {
+    background-color: #4c51bf;
+}
+  
+/* Adjustments for single column inputs */
+.form-row,
+.input-group {
+    grid-column: span 2;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .registration-form {
+      grid-template-columns: 1fr;
+    }
+}
+  

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<RestaurantMenu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="restaurantmenu.xsd">
+    <Section name="Starters">
+        <Item>
+            <Name>Tomato Soup</Name>
+            <Price>5.99</Price>
+            <Description>Fresh tomato soup with herbs and a touch of cream.</Description>
+        </Item>
+        <Item>
+            <Name>Bruschetta</Name>
+            <Price>7.49</Price>
+            <Description>Grilled bread with tomato, basil, and fresh mozzarella.</Description>
+        </Item>
+    </Section>
+    <Section name="Mains">
+        <Item>
+            <Name>Grilled Salmon</Name>
+            <Price>18.99</Price>
+            <Description>Grilled salmon with a lemon butter sauce and seasonal vegetables.</Description>
+        </Item>
+        <Item>
+            <Name>Vegetarian Pizza</Name>
+            <Price>15.99</Price>
+            <Description>Made with a blend of cheeses, tomato sauce, and a variety of vegetables.</Description>
+        </Item>
+    </Section>
+    <Section name="Desserts">
+        <Item>
+            <Name>Tiramisu</Name>
+            <Price>6.99</Price>
+            <Description>Classic Italian dessert made with espresso-soaked ladyfingers and mascarpone cheese.</Description>
+        </Item>
+        <Item>
+            <Name>Chocolate Lava Cake</Name>
+            <Price>7.99</Price>
+            <Description>Warm chocolate cake with a molten chocolate center, served with vanilla ice cream.</Description>
+        </Item>
+    </Section>
+    <Section name="Drinks">
+        <Item>
+            <Name>Espresso</Name>
+            <Price>2.99</Price>
+            <Description>Strong black coffee made by forcing steam through ground coffee beans.</Description>
+        </Item>
+        <Item>
+            <Name>Mojito</Name>
+            <Price>8.99</Price>
+            <Description>Refreshing cocktail made with rum, sugar, lime juice, soda water, and mint.</Description>
+        </Item>
+    </Section>
+</RestaurantMenu>
